@@ -32,7 +32,7 @@ import UIKit
 import Material
 
 class TransitionViewController: UIViewController {
-    fileprivate var fabButton: FABButton!
+    fileprivate var fabButton: FabButton!
     
     open override func viewDidLoad() {
         super.viewDidLoad()

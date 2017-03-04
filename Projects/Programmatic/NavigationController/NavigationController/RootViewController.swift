@@ -36,7 +36,7 @@ class RootViewController: UIViewController {
     fileprivate var starButton: IconButton!
     fileprivate var searchButton: IconButton!
     
-    fileprivate var fabButton: FABButton!
+    fileprivate var fabButton: FabButton!
     
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,9 +72,9 @@ extension RootViewController {
     }
     
     fileprivate func prepareFABButton() {
-        fabButton = FABButton(image: Icon.cm.photoCamera)
+        fabButton = FabButton(image: Icon.cm.photoCamera)
         fabButton.addTarget(self, action: #selector(handleNextButton), for: .touchUpInside)
-        view.layout(fabButton).width(64).height(64).bottom(24).right(24)
+        view.layout(FabButton).width(64).height(64).bottom(24).right(24)
     }
 }
 
